@@ -1,0 +1,357 @@
+% coding:utf-8
+
+%----------------------------------------
+%FOSAPMA, a LaTeX-Code for a summary of modern mathematics and physics in application.
+%Copyright (C) 2013, Mario Felder
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or (at your option) any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%----------------------------------------
+
+\chapter{Kerne und Teilchen}
+ 
+\section{Coulomb Gesetz}
+Coulomb-Kraft:
+\[\boxed{
+	F_{Coulomb} = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 \cdot Q_2}{r^2}
+}\]
+
+Coulomb-Energie:
+\[\boxed{
+	E_{pot} = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 \cdot Q_2}{r}
+}\]
+\begin{footnotesize}
+	$\varepsilon_0 = 8.8542 \times 10^{-12} \ \ [\frac{C}{V \cdot m}]$
+\end{footnotesize}
+\\
+
+
+\section{Atomare Masseneinheit $u$}
+
+\[
+	\boxed{
+	u = 1.660538921 \times 10^{-27}kg
+	}
+\]
+\\
+\begin{footnotesize}
+Masse der Elementarteilchen:
+\[
+\begin{aligned}
+	m_p&=1.007276466812u \\
+	m_n&=1.008664916u \\
+	m_e&=5.4857990946 \times 10^{-4}u
+\end{aligned}
+\]
+\end{footnotesize}
+
+
+\section{Kerngrösse}
+
+\[
+\boxed{
+	R = R_0 \cdot A^\frac13
+}
+\]
+\begin{footnotesize}
+$R_0=1.2 \times 10^{-15}m$\\
+$A:$ Gesamtzahl Nukleonen, $A=Z+N$\\
+\end{footnotesize}
+
+
+\section{Mol}
+
+1 mol enstpricht der \textbf{Avogadrozahl}:
+\[\boxed{
+	N_A=6.0221 \times 10^{23}
+}\]
+\\
+Anzahl $mol$ eines Körpers:
+\[\boxed{
+	n = \frac{N}{N_A}
+}\]
+\begin{footnotesize}
+	$N:$ Anzahlt Teilchen in einem Körper
+\end{footnotesize}
+\\
+\\
+Masse $m$ eines Körpers:
+\[\boxed{
+	m = n \cdot m_{mol}
+}\]
+
+
+\section{Bindungsenergie der Kerne}
+
+Bindungsenergie eines Atomkerns:
+\[\boxed{
+	E_B=\left(Z \cdot M_H + N \cdot m_n - ^A_ZM \right) \cdot c^2
+}\]
+\begin{footnotesize}
+	$M_H:$ Masse des Wasserstoffatoms ($1.007825u$)\\
+	$^A_ZM:$ Masse des neutralen Atoms\\
+\end{footnotesize}
+\\
+mit:
+\[\boxed{
+	1u \cdot c^2 = 931.494061MeV
+}\]
+\\
+Elementarladung:
+\[
+	1e=1.602176487 \times 10^{-19}C
+\]
+\\
+\\
+Die Atommasse pro Nukleon $\left(\frac{^A_ZM}{A}\right)$ ist ein Mass für die Stabilität des Kerns.
+Je kleiner, desto stärker die Bindung!
+\[\boxed{
+	\frac{-E_B}{A}=\frac{\left(Z \cdot M_H + N \cdot m_n - ^A_ZM \right) \cdot c^2}{A}
+}\]
+
+
+\section{Alpha Zerfall}
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode
+		\includegraphics[scale=0.13, trim = 0mm 0mm 0mm 0mm]{images/alpha_decay.png}
+        \caption{Alpha Zerfall}
+        \label{fig:adecay}
+	\end{center}
+\end{figure}
+~\\
+Das Alpha Teilchen ist ein $^4_2He$ Kern.\\
+\\
+Ein Element $X$ zerfällt:
+\[\boxed{
+	^A_ZX \  \rightarrow \ ^{A-4}_{Z-2}Y+\alpha+2e^-
+}\]
+\\
+Atomare Masse von $\alpha$:
+\[
+	\alpha = 4.001506179125u
+\]
+
+
+\section{Beta Zerfall}
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode
+		\includegraphics[scale=0.13, trim = 0mm 0mm 0mm 0mm]{images/beta-minus_decay.png}
+        \caption{Beta-Minus Zerfall}
+        \label{fig:bdecay}
+	\end{center}
+\end{figure}
+~\\
+Bei einem \textbf{Beta-Minus} Zerfall wird ein Neutron in ein Proton umgewandelt, unter Aussendung eines Antineutrinos.
+\[\boxed{
+	n \  \rightarrow \  p + \beta^- + \overline{v_e}
+}\]
+\[\boxed{
+	^A_ZX \  \rightarrow \  ^A_{Z+1}Y + \beta^- + \overline{v_e}
+}\]
+\\
+Bei einem \textbf{Beta-Plus} Zerfall wird ein Neutron in ein Proton umgewandelt, unter Aussendung eines Neutrinos.
+\[\boxed{
+	p \  \rightarrow \  n + \beta^+ + v_e
+}\]
+\[\boxed{
+	^A_ZX \  \rightarrow \  ^A_{Z-1}Y + \beta^- + \overline{v_e}
+}\]
+
+
+\section{Gamma Zerfall}
+\begin{figure}[h!]
+	\begin{center}
+		\leavevmode
+		\includegraphics[scale=0.13, trim = 0mm 0mm 0mm 0mm]{images/gamma_decay.png}
+        \caption{Beta-Minus Zerfall}
+        \label{fig:bdecay}
+	\end{center}
+\end{figure}
+~\\
+Beim Gamma Zerfall befindet sich das Atom in einem angeregten Zustand und sendet dan ein hochenergetisches Photon ($\gamma$) aus.\\
+\\
+Es ensteht kein neues Element, sondern der Kern fällt nur in einen energetisch tieferen Zustand.\\
+\\
+\[\boxed{
+	E_{Photon}=h \cdot f
+}\]
+\\
+Plancksche Konstante:
+\[
+	h=6.6261 \times 10^{-34}J \cdot s
+\]
+
+
+\section{Elektromangetisches Spektrum}
+Für jede elektromagnetische Welle gelten folgende Gleichungen:
+\[\boxed{
+\begin{aligned}
+	c &= f \cdot \lambda \\
+	p_\gamma &= \frac{h}{\lambda} \\
+	E_\gamma &= h \cdot f = h \cdot \frac{c}{\lambda} = p_\gamma \cdot c
+\end{aligned}
+}\]
+\begin{footnotesize}
+	$f:$ Frequenz \\
+	$\lambda:$ Wellenlänge \\
+	$p_\gamma:$ Impuls \\
+	$E_\gamma:$ Energie des Photons\\
+	\\
+	$c = 299792458 \frac{m}{s}$\\
+	$h = 6.626069 \times 10^{-34} J \cdot s$
+\end{footnotesize}
+
+
+\section{Halbwertszeit und Aktivität}
+Radioaktives Zerfallsgesetz:
+\[\boxed{
+	N(t)=N_0 \cdot \ex{-\beta \cdot t}
+}\]
+\begin{footnotesize}
+	$\beta:$ Zerfallskonstante
+\end{footnotesize}
+\\
+\\
+Halbwertszeit:
+\[\boxed{
+	T_{\frac12} = \frac{\ln{2}}{\beta} = \ln{2} \cdot \tau
+}\]
+\begin{footnotesize}
+	$\tau:$ Zerfallszeit ($\frac1\beta$)
+\end{footnotesize}
+\\
+\\
+Aktivität:
+\[\boxed{
+	A=\left| \frac{\di N}{\di t} \right| = \beta \cdot N = \frac{N}{\tau}
+}\]
+\begin{footnotesize}
+	Becquerel: $1 Bq = 1$ Zerfall/Sekunde\\
+	Curie: $1 Ci = 3.70 \times 10^{10}Bq$
+\end{footnotesize}
+
+
+\section{$^{14}C$-Datierung}
+Alles Lebendige enthält $^{14}C$. Das $^{14}C$ entsteht kontinuierlich durch kosmische Bestrahlung.\\
+\\
+Das natürliche Verhältnis:
+\[\boxed{
+	\frac{^{14}C}{^{12}C} = 1.3 \times 10^{-12}
+}\]
+\\
+\\
+Halbwertszeit von $^{14}C$:
+\[\boxed{
+	T_{\frac12} = 5730 \mathrm{\text{ Jahre}}
+}\]
+\\
+
+
+\section{Strahlendosis}
+Die absorbierte Energie pro kg lebendes Gewege nennt man \textbf{Energiedosis} D:
+\[\boxed{
+	[D] = 1 Gray = 1Gy = 1 \frac{J}{kg} = 100rad
+}\]
+\\
+Der biologische Effekt wird beschrieben durch die \textbf{Äquivalentdosis} H:
+\[\boxed{
+	[H] = 1 Sievert = 1 Sv = 100rem
+}\]
+\\
+Bewertugnsfaktor q:
+\[\boxed{
+	H = D \cdot q
+}\]
+\begin{footnotesize}
+	$[q] = \frac{Sv}{Gy}$
+\end{footnotesize}
+\\
+\\
+\begin{tabular}{|l|c|}
+	\hline
+	Strahlung		&	$q$ [$\frac{Sv}{Gy}$]	\\
+	\hline
+	\rowcolor{white}$\gamma$		&	1				\\
+	\rowcolor{lgray}$\beta$		&	1 - 1.5			\\
+	\rowcolor{white}langsame $n$	&	3				\\
+	\rowcolor{lgray}$n$ (0.02 - 0.1MeV)&	5 - 8				\\
+	\rowcolor{white}schnelle $n$ und $p$&10				\\
+	\rowcolor{lgray}$\alpha$		&	20				\\
+	\rowcolor{white}schwere Kerne 	&	20				\\
+	\hline
+\end{tabular}\\
+\\
+\\
+Die Frei werdende Energie einer Nuklearexplosin wird mit dem Energieäquivalent des Sprengstoffs TNT verglichen.
+\[\boxed{
+	1kT = 4.184 \times 10^{12}
+}\]
+\\
+
+
+\section{Wenig Zerfälle - Poisson Statistik}
+Der radioaktive Zerfall eines Kerns ist \textbf{echt zufällig}
+\[\boxed{
+	p(x) = \frac{m^x \cdot \ex{-m}}{x!} = \frac{m^x \cdot ex{-m}}{\int\limits_0^\infty \left(t^x \cdot \ex{-t} \right) \di t}
+}\]
+\begin{footnotesize}
+	$p(x)$ ist die Wahrscheinlichkeitsdichte für den Wert $x$ bei einem Mittelwert von $m$.
+\end{footnotesize}
+\\
+
+
+\section{Viele Zerfälle - Gauss Statistik}
+Für lange Messzeiten, d.h. gross Mittelwerte geht die Poisson Verteilung in die Gaussverteilung über:
+\[\boxed{
+	p(x) = \frac1{\sqrt{2\pi \cdot m}} \cdot \ex{\frac{-\left(x - m\right)^2}{2m}}
+}\]
+\\
+Standard Abweichung:
+\[
+	\sigma = \sqrt{m}
+\]
+\\
+
+
+\section{Nukleare Reationen}
+Zwei Kerne $A$ und $B$ verwandeln sich in einem Prozess zu Kernen $C$ und $D$.
+Die \textbf{Reaktionsenergie} Q berechnet sich:
+\[\boxed{
+	Q = \left( M_A + M_B -M_C -M_D \right) \cdot c^2
+}\]
+
+
+\subsection{exotherm}
+Ist Q positiv, wird die gesamte Masse kleiner und die kinetische Restenergie grösser.
+
+\subsection{endotherm}
+Ist Q negativ, wird die gesamte Masse grööser und die kinetische Energie kleiner.\\
+Eine endotherme Reaktion ist nur möglich, wenn die gewonnene Masse in Form kinetischer Energie vorhanden ist.
+Dabei entspricht der Betrag von Q gleich der kinetischen Energie im Schwepunktsystem:
+\[
+	\left|Q\right| = Q_{cm}
+\]
+\\
+Wenn der einte Körper in Ruhe ist, muss sich der andere mit folgender Energie annähern:
+\[\boxed{
+	E_{kin,a}=\frac{M_b + M_a}{M_b} \cdot Q_{cm}
+}\]
+
+
+\section{Aktivierungsenergie}
+kinetische Energie von Teilchen bei Temperatur T:
+\[
+	E_{kin} = \frac{3}{2} k_B \cdot T
+\]
+\begin{footnotesize}
+	$k_B = 1.3806488 \times 10^{-23}\ \frac{J}{K}$
+\end{footnotesize}
