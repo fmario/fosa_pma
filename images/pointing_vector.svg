@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100.082px" height="77.841px" viewBox="0 0 100.082 77.841" enable-background="new 0 0 100.082 77.841"
+	 xml:space="preserve">
+<text transform="matrix(1 0 0 1 14.499 70.499)" font-family="'Cambria-Italic'" font-size="12">q</text>
+<text transform="matrix(0.583 0 0 0.583 20.7568 74.4951)" font-family="'Cambria-Italic'" font-size="12">e</text>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M9.306,37.499c6.194,0,14.361,5.291,17.173,11.166"/>
+<g>
+	<g>
+		<line fill="none" stroke="#2FAC66" stroke-width="0.75" stroke-miterlimit="10" x1="9.307" y1="53.999" x2="9.307" y2="25.144"/>
+		<g>
+			<polygon fill="#2FAC66" points="11.485,26.63 9.308,18.499 7.128,26.63 			"/>
+		</g>
+	</g>
+</g>
+<circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="9.306" cy="57.166" r="3.167"/>
+<text transform="matrix(1 0 0 1 0 9.999)" font-family="'Cambria-Italic'" font-size="12">→</text>
+<text transform="matrix(1 0 0 1 0 13.499)" font-family="'Cambria-Italic'" font-size="12">a</text>
+<g>
+	<g>
+		
+			<line fill="none" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" x1="12.473" y1="55.999" x2="69.613" y2="26.081"/>
+		<g>
+			<polygon points="69.308,28.701 75.501,23 67.286,24.84 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 40.25 28.749)" font-family="'Cambria-Italic'" font-size="12">→</text>
+<text transform="matrix(1 0 0 1 40.25 32.249)" font-family="'Cambria-Italic'" font-size="12">r</text>
+<text transform="matrix(1 0 0 1 17.8926 35.582)" font-family="'Cambria-Italic'" font-size="12">φ</text>
+<circle cx="75.5" cy="22.999" r="1"/>
+<text transform="matrix(1 0 0 1 80.5 22.999)" font-family="'Cambria-Italic'" font-size="12">S(r)</text>
+</svg>

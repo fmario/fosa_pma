@@ -22,7 +22,7 @@ Coulomb-Kraft:
 \[\boxed{
 	F_{Coulomb} = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 \cdot Q_2}{r^2}
 }\]
-
+\\
 Coulomb-Energie:
 \[\boxed{
 	E_{pot} = \frac{1}{4 \pi \varepsilon_0} \frac{Q_1 \cdot Q_2}{r}
@@ -150,7 +150,7 @@ Atomare Masse von $\alpha$:
 	\end{center}
 \end{figure}
 ~\\
-Bei einem \textbf{Beta-Minus} Zerfall wird ein Neutron in ein Proton umgewandelt, unter Aussendung eines Antineutrinos.
+Bei einem \textbf{Beta-Minus} Zerfall wird ein Neutron in ein Proton umgewandelt unter Aussendung eines Antineutrinos.
 \[\boxed{
 	n \  \rightarrow \  p + \beta^- + \overline{v_e}
 }\]
@@ -206,7 +206,7 @@ Für jede elektromagnetische Welle gelten folgende Gleichungen:
 	$p_\gamma:$ Impuls \\
 	$E_\gamma:$ Energie des Photons\\
 	\\
-	$c = 299792458 \frac{m}{s}$\\
+	$c = 299'792'458 \frac{m}{s}$\\
 	$h = 6.626069 \times 10^{-34} J \cdot s$
 \end{footnotesize}
 
@@ -234,6 +234,7 @@ Aktivität:
 \[\boxed{
 	A=\left| \frac{\di N}{\di t} \right| = \beta \cdot N = \frac{N}{\tau}
 }\]
+~\\
 \begin{footnotesize}
 	Becquerel: $1 Bq = 1$ Zerfall/Sekunde\\
 	Curie: $1 Ci = 3.70 \times 10^{10}Bq$
@@ -293,7 +294,7 @@ Bewertugnsfaktor q:
 \\
 Die Frei werdende Energie einer Nuklearexplosin wird mit dem Energieäquivalent des Sprengstoffs TNT verglichen.
 \[\boxed{
-	1kT = 4.184 \times 10^{12}
+	1kT = 4.184 \times 10^{12} J
 }\]
 \\
 
@@ -301,7 +302,7 @@ Die Frei werdende Energie einer Nuklearexplosin wird mit dem Energieäquivalent d
 \section{Wenig Zerfälle - Poisson Statistik}
 Der radioaktive Zerfall eines Kerns ist \textbf{echt zufällig}
 \[\boxed{
-	p(x) = \frac{m^x \cdot \ex{-m}}{x!} = \frac{m^x \cdot ex{-m}}{\int\limits_0^\infty \left(t^x \cdot \ex{-t} \right) \di t}
+	p(x) = \frac{m^x \cdot \ex{-m}}{x!} = \frac{m^x \cdot e^{-m}}{\int_0^\infty \left(t^x \cdot \ex{-t} \right) \di t}
 }\]
 \begin{footnotesize}
 	$p(x)$ ist die Wahrscheinlichkeitsdichte für den Wert $x$ bei einem Mittelwert von $m$.
@@ -345,10 +346,33 @@ Wenn der einte Körper in Ruhe ist, muss sich der andere mit folgender Energie an
 \[\boxed{
 	E_{kin,a}=\frac{M_b + M_a}{M_b} \cdot Q_{cm}
 }\]
+\\
 
+\section{Kernspaltung}
+Durch Neutronenbeschuss eines Kerns bei gelegentlichem Beta Zerfall kann seine Massenzahl (Anzahl Nukleonen) um bis zu 25 erhöht werden.\\
+Der Neutronenbeschuss von $^{238}U$ (99.3\%) oder $^{235}U$ (0.7\%) führt zu deren Spaltung in kleinere Fragmente.\\
+Nicht das $^{235}U$ zerfällt, sondern das hoch angeregte $^{235}U^*$.
+Dies gemäss zwei typischen Varianten:
+\[\boxed{
+	^{235}_{92}U + ^1_0n \ \rightarrow\ ^{235}_{92}U^* \ \rightarrow\ ^{144}_{56}Ba + ^{89}_{36}Kr + 3 \cdot ^1_0n
+}\]
+\[\boxed{
+	^{235}_{92}U + ^1_0n \ \rightarrow\ ^{235}_{92}U^* \ \rightarrow\ ^{140}_{54}Xe + ^{94}_{38}Sr + 2 \cdot ^1_0n
+}\]
+\\
+\\
+\\
+Der wichtige Unterschied:\\
+\fbox{\parbox{\linewidth}{
+	\textbf{Radioaktivität:} \underline{Spontaner} Zerfall instabiler Isotop wie $^{14}C$. Der Zerfall erfolgt echt zufällig. Die Hälfte der radioaktiven Kerne ist nach der Halbwertszeit $T_{\frac12}$ zerfallen.\\
+	\\
+	\textbf{Kernreaktion:} \underline{Erzwungene} Umwandlung der Kerne, beispielsweise durch Beschuss mit Neutronen. Die neu entstehenden Kerne können allerdings radioaktiv sein und spontan weiter zerfallen.
+}}
 
 \section{Aktivierungsenergie}
-kinetische Energie von Teilchen bei Temperatur T:
+Zwei Kerne müssen sich für die Fusion so weit annähern, dass die starke Kernkraft wirksam wird, typischerweise auf etwa $2 \times 10^{-15}m$.\\
+\\
+Die durchschnittliche kinetische Energie von Teilchen bei Temperatur T:
 \[
 	E_{kin} = \frac{3}{2} k_B \cdot T
 \]

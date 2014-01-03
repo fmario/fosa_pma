@@ -1,0 +1,316 @@
+% coding:utf-8
+
+%----------------------------------------
+%FOSAPMA, a LaTeX-Code for a summary of modern mathematics and physics in application.
+%Copyright (C) 2013, Mario Felder
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or (at your option) any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%----------------------------------------
+
+\chapter{Relativitätstheorie}
+
+\fbox{\parbox{\linewidth}{
+	Die spezielle Relativitätstheorie basiert auf zwei einfachen und intuitiven Postulaten:
+	\begin{enumerate}[label=\textbf{\Roman*.}]
+		\item Alle physikalischen Gesetzte gelten gleichermassen in jedem Inertialsystem
+		\item Die Vakuumlichtgeschwindigkeit ist konstant und exakt \textbf{$c=299'792'458 \frac{m}{s}$} in allen Inertialsystemen.
+\end{enumerate}
+}}
+
+\newpage
+\section{Bestimmung der Lichtgeschwindigkeit}
+
+Maxwell konnte aus seinen vier Gleichungen die Wellengleichung für elektromagnetische Wellen ableiten. Daraus ergibt sich die Lichtgeschwindigkeit als:
+\[\boxed{
+	c = \frac{1}{\sqrt{\varepsilon_0 \cdot \mu_0}}
+}\]
+\\
+\begin{footnotesize}
+	die elektrische Feldkonstante $\varepsilon_0 = 8.8542 \times 10^{-12} \frac{As}{Vm}$\\
+	die magnetische Feldkonstante $\mu_0 = 4 \cdot \pi \times 10^{-7} \frac{Vs}{Am}$ 
+\end{footnotesize}
+\\
+
+
+\section{Zeitdilatation $\gamma$}
+Ein Beobachter im System $S$, misst eine andere Zeit $\Delta t$ für ein Ereignis im bewegtem System $S'$:
+\[\boxed{
+	\Delta t = \gamma \cdot \Delta t_0
+}\]
+
+\[
+	\beta = \frac{u}{c} \\ \gamma = \frac{1}{\sqrt{1-\frac{u^2}{c^2}}} = \frac{1}{\sqrt{1-\beta^2}}
+\]
+
+\subsection{Eigenzeit $\Delta t_0$}
+Es existiert nur ein Bezugssystem, in dem eine Uhr in Ruhe ist. ALle anderen Bezugssysteme sind dazu bewegt und werden diese Uhr nachgehen sehen. \textbf{Zeitintervalle am gleichen Ort sind die kürzesten.}
+\\
+
+
+\section{Längenkontraktion $\frac{1}{\gamma}$}
+Ebenfalls misst ein Beobachter im System $S'$ eine andere Länge $L'$ für eine Länge $L_0$ parallel zur Bewegung im relativ bewegtem System $S$:
+\[\boxed{
+	L = L_0 \cdot \sqrt{1 - \frac{u^2}{c^2}} = \frac{L_0}{\gamma}
+}\]
+
+\subsection{Eigenlänge $L_0$}
+In allen zu $S'$ bewegten Bezugssystemen messen die Beobachter eine kleinere Länge $L$, und zwar umso kleiner, je grösser die Relativgeschwindigkeit $u$ ist.
+\\
+
+
+\section{Formverzerrung}
+Durch die Längenkontraktion werden Formen verzerrt. Ein Quadrat im System $S'$ wird zu einem Parallelogramm im System $S$. Der Beobachter im System $S$ sieht den Winkel zur Bewegungsrichtung als:
+\[\boxed{
+	\theta = \arctan \left( \gamma \cdot \frac{\sin \theta '}{\cos \theta '} \right)
+}\]
+\\
+
+
+\section{Lorentz Transformationen}
+Koordinaten:
+\[\boxed{
+	\begin{aligned}
+		x &= \frac{x'+ut'}{\sqrt{1-\frac{u^2}{c^2}}} = \gamma (x' + ut') \\
+		y &= y' \\
+		z &= z' \\
+		t &= \frac{t' + \frac{ux'}{c^2}}{\sqrt{1-\frac{u^2}{c^2}}} = \gamma (t' + \frac{ux'}{c^2}) 
+	\end{aligned}
+}\]
+\\
+Geschwindigkeiten:
+\[\boxed{
+	\begin{aligned}
+		v_x &= \frac{v_x'+u}{1+\frac{u \cdot v_x'}{c^2}} \\
+		v_y &= \frac{v_y' \cdot \sqrt{1-\frac{u^2}{c^2}}}{1+\frac{u \cdot v_x'}{c^2}} \\
+		v_z &= \frac{v_z' \cdot \sqrt{1-\frac{u^2}{c^2}}}{1+\frac{u \cdot v_x'}{c^2}}  
+	\end{aligned}
+}\]
+\\
+Kräfte:
+\[\boxed{
+	\begin{aligned}
+		F_x &= \frac{F_x' + \frac{u}{c^2} \left( \vec{F}' \cdot \vec{v}' \right)}{1+\frac{u \cdot v_x'}{c^2}} \\
+		F_y &= \frac{F_y' \cdot \sqrt{1-\frac{u^2}{c^2}}}{1+\frac{u \cdot v_x'}{c^2}} \\
+		F_z &= \frac{F_z' \cdot \sqrt{1-\frac{u^2}{c^2}}}{1+\frac{u \cdot v_x'}{c^2}}  
+	\end{aligned}	
+}\]
+\\
+Die Bewegungsrichtung ist die $x$-Achse. Alle gestrichenen Grössen sind gemessen in $S'$. $u$ ist die Relativgeschwindigkeit der beiden Systeme. $u$ ist positiv für $S$, und negativ für $S'$. Die Beziehungen lauten genau gleich, nur erhält $u$ ein negatives Vorzeichen!
+\\
+\\
+\\
+Wählt man statt der Zeit $t$ die Lichtlänge $ct$ werden die Lorentz Transformationen:
+\[
+	x = \gamma \left( x' + \frac{u}{c}ct' \right)	\\ ct = \gamma \left( ct' + \frac{u}{c} x' \right)
+\]
+\\
+
+\subsection{Relativistischer Impuls}
+Relativistischer Impuls:
+\[\boxed{
+	\vec{p} = \frac{m_0 \cdot \vec{v}}{\sqrt{1-\frac{v^2}{c^2}}} = \gamma m_0 \vec{v}
+}\]
+\\
+daraus kann eine relativistische Masse definiert werden:
+\[\boxed{
+	m_{rel} = \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}} = \gamma m_0
+}\]
+\\
+
+\subsection{Zweites Newtonsches Gesetz}
+Anhand der ursprünglichen Formulierung Newtons:
+\[\boxed{
+	\vec{F} = \frac{\di \vec{p}}{\di t} = \frac{\di}{\di t} \gamma m_0 \vec{v}
+}\]
+\\
+\\
+Fall \textbf{(1)}: $\vec{F}$ und $\vec{v}$ sind parallel
+\[\boxed{
+	\vec{F}_{||} = \frac{m_0}{ \left( 1-\frac{v^2}{c^2} \right)^{\frac32}} \cdot \vec{a}_{||} = \gamma^3 m_0 \vec{a}_{||}
+}\]
+\\
+Fall \textbf{(2)}: $\vec{F}$ und $\vec{v}$ sind senkrecht ($v^2 = $konst)
+\[\boxed{
+	\vec{F}_{\bot} = \frac{m_0}{ \sqrt{1-\frac{v^2}{c^2}}} \cdot \vec{a}_{\bot} = \gamma m_0 \vec{a}_{\bot}
+}\]
+\\
+\begin{footnotesize}
+	Aus \textbf{(1)} und \textbf{(2)} folgt, dass bei hohen Geschwindigkeiten Beschleunigung und Kraft nicht mehr parallel sind!\\
+	$\frac{F_{\shortparallel}}{F_{\bot}} = \gamma^2 \frac{a_{\shortparallel}}{a_{\bot}}$
+\end{footnotesize}
+\\
+
+\subsection{Masse $=$ Energie}
+Relativistische kinetische Energie:
+\[\boxed{
+	E_{kin} = \frac{m_0 \cdot c^2}{\sqrt{1-\frac{v^2}{c^2}}} - m_0 \cdot c^2 = (\gamma - 1) \cdot m_0 \cdot c^2
+}\]
+\\
+Gesamte Energie:
+\[\boxed{
+	E = E_{kin} + m_0 \cdot c^2 = \gamma m_0 \cdot c^2 = m_{rel} \cdot c^2
+}\]
+\\
+\begin{footnotesize}
+	$m_0 \cdot c^2$: Ruheenergie \\
+	$m_0$ ist die Ruhemasse aus Tabellen
+\end{footnotesize}
+\\
+
+\subsection{Invariante Grössen}
+Alternativ kann auch geschrieben werden:
+\[
+	E^2 = \left( m_0 \cdot c^2 \right)^2 + (pc)^2
+\]
+\\
+\begin{footnotesize}
+	Diese Gleichung gilt auch für masselose Teilchen, beispielsweise für Photonen: $E_{Photon} = 0 + pc = \frac{h}{\lambda} c = h \cdot f$
+\end{footnotesize}
+\\
+\\
+Invariante Form der Ruheenergie:
+\[\boxed{
+	m_0 \cdot c^2 = \sqrt{E^2 - (pc)^2}
+}\]
+\\
+Invariante Form des Raum-Zeit Intervalls:
+\[\boxed{
+	\Delta s^2 = (c \cdot \Delta t)^2 - \left[ \Delta x^2 + \Delta y^2 + \Delta z^2 \right] 
+	\begin{aligned}
+		&= (c \cdot \Delta t_0)^2 \\
+		&= -{L_0}^2
+	\end{aligned}
+}\]
+\\
+\begin{footnotesize}
+	$\Delta s^2 = -{L_0}^2$ = \textbf{raumartig} \\
+	Zeitintervall ist null, beide Ereignisse finden gleichzeitig statt.\\
+	\\
+	$\Delta s^2 = (c \Delta t_0)^2$ = \textbf{zeitartig} \\
+	Ereignise finden am gleichen Ort, aber zu unterschiedlichen Zeiten statt.
+\end{footnotesize}
+
+
+
+\section{Minkowski Diagramm}
+
+Mit Hilfe eines Minkowski Diagramms können Zusammenhänge von zwei Systemen $S$ und $S'$ einfach ausgelesen werden.\\
+Für jedes Ereignis können Ort und Zeit für das jeweilige System zugeordnet werden.
+\begin{center}
+	\includegraphics[scale = 0.75]{images/minkowski_diagramm}
+\end{center}
+~\\
+Der Winkel $\alpha$ ergibt sich aus:
+\[\boxed{
+	\tan \alpha = \frac{u}{c}
+}\]
+\\
+
+
+\section{Relativität der Elektrodynamik}
+
+In Bezug auf die Relativ-Geschwindigkeit $u$ wird zwischen parallelen und senkrechten Feldkomponenten unterschieden.
+
+\[\boxed{
+\begin{matrix}
+	E_{||}' = E_{||}	&&	B_{||} = B_{||}	\\
+	E_{\bot}' = \gamma \left( \vec{E} + \vec{u} \times \vec{B} \right)_{\bot}	&& B_{\bot}' = \gamma \left( \vec{B} - \frac{\vec{u} \times \vec{E}}{c^2} \right)_{\bot}	
+\end{matrix}
+}\]
+\\
+
+
+\section{Dopplereffekt von elektro-magn. Wellen}
+Da elektro-magnetische Wellen kein Trägermedium benötigen, muss nicht wie beim Schall speziell zwischen der Bewegung der Quelle ud des Beobachters unterschieden werden.
+\[\boxed{
+\begin{matrix}
+	f = \sqrt{\frac{c+u}{c-u}} \cdot f_0' && \  && \frac{f-f_0'}{f_0'} = \frac{\Delta f}{f_0'}
+\end{matrix}
+}\]
+\\
+\begin{footnotesize}
+	$u$ positiv: Quelle bewegt sich auf den Beobachter zu \\
+	$u$ negativ: Quelle bewegt sich vom Beobachter weg
+\end{footnotesize}
+\\
+
+
+\section{Headlight Effekt - Beaming Effekt}
+Die Lichtgeschwindigkeit ist in jedem Bezugssystem gleich. Nicht gleich ist aber die Richtung der Strahlung.\\
+Eine isotrope Quelle bewege sich mit der Geschwindigkeit $u$ bezüglich des Laborsystems $S$. Im Laborsystem $S$ strahlt die Quelle  vor allem in die Vorwärtsrichtung.
+\begin{center}
+	\includegraphics[scale = 0.4]{images/beaming_effekt}
+\end{center}
+
+\[\boxed{
+	\cos \theta = \frac{\cos \theta' + \frac{u}{c}}{1 + \frac{u}{c} \cos \theta'}
+}\]
+\\
+\\
+Ähnliches gilt für die anderen trigonometrischen Funktionen:
+\[\begin{matrix}
+	\sin \theta = \frac{\sin \theta '}{\gamma \left( 1 + \frac{u}{c} \cos \theta ' \right)} && 
+	\tan \theta = \frac{\sin \theta '}{\gamma \left( \cos \theta ' + \frac{u}{c} \right) }
+\end{matrix}\]
+\\
+
+
+\subsection{Aberration des Lichts}
+\begin{center}
+	\includegraphics[scale = 0.5]{images/aberration}
+\end{center}
+Aberrationswinkel:
+\[\boxed{
+	\tan \beta = \frac{v_x}{v_y} = \frac{\frac{u}{c}}{\sqrt{1-\frac{u^2}{c^2}}}
+}\]
+\\
+\textit{Achtung:} Der Winkel $\beta$ ist ein anderer als $\theta$!\\
+$\tan \beta = \frac1{\tan \theta} = \cot \theta$
+\\
+
+
+\section{Strahlung beschleunigter Elektronen}
+
+Pointing-Vektor in Richtung Beobachter:
+\[\boxed{
+	S(r)=\frac{\di P}{\di A} = \frac{q_e^2 a^2 \sin^2 \varphi}{\left( 4 \pi \right)^2 \varepsilon_0 c^3 r^2}\ \ \left[ \frac{W}{m^2} \right]
+}\]
+\begin{center}
+	\includegraphics[scale = 0.75]{images/pointing_vector}
+\end{center}
+~\\
+\begin{footnotesize}
+	$q_e$: Elementarladung $1.6 \times 10^{-19}C$ \\
+	$a$: Beschleunigung des Elektrons \\
+	$\varphi$: Beobachtungsrichtung \\
+	$r$: Abstand des Beobachters zum Elektron
+\end{footnotesize}
+\\
+\\
+Abstrahlung pro Raumwinkel $\di \Omega$:
+\[\boxed{
+	\frac{\di P}{\di \Omega} = \frac{q_e^2 a^2 \sin^2 \varphi}{\left( 4 \pi \right)^2 \varepsilon_0 c^3}\ \ \left[ \frac{W}{sr} \right]	
+}\]
+\\
+
+
+\subsection{Synchrotron Strahlung}
+
+In einem Synchrotron bewegen sich geladene Teilchen mit nahezu Lichtgeschwindigkeit im Kreis herum. Die Beschleunigung $a$ bei gleichbleibender Geschwindigkeit zeigt zum Kreismittelpunkt.
+\\
+\begin{center}
+	\includegraphics[scale = 0.7]{images/synchrotron}
+\end{center}
+~\\
+Im System $S'$ strahlt die Quelle ringförmig ab. Im Laborsystem $S$ strahlt die Quelle vorwärts ab, die charakteristische Synchrotron-Strahlung.
+\[
+	\tan \theta = \frac{\sin \theta '}{\gamma \left( \cos \theta ' + \frac{u}{c} \right)}
+\]
